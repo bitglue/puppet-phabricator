@@ -53,4 +53,12 @@ Vagrant.configure("2") do |config|
 
     config.vm.provision "shell", privileged: false, inline: install_puppet_code
   end
+
+  config.vm.define "trusty" do |config|
+    config.vm.box = "ubuntu/trusty64"
+    config.vm.provision "shell", privileged: false, inline: install_puppet_code
+    config.vm.provider "virtualbox" do |v|
+      v.memory = 1024
+    end
+  end
 end

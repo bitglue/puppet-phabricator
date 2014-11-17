@@ -1,6 +1,6 @@
-forge "http://forge.puppetlabs.com"
+forge "https://forgeapi.puppetlabs.com"
 
 modulefile
 
 mod 'macprofessionals/arcanist',
-    :git => 'https://github.com/macprofessionals/puppet-arcanist.git'
+    :git => 'https://github.com/bitglue/puppet-arcanist.git', :ref => 'trusty'
